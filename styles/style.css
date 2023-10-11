@@ -17,6 +17,12 @@ body {
   color: #eee;
 }
 
+h1,
+h2,
+h5 {
+  color: #000;
+}
+
 h3 {
   margin: 0;
   padding: 0;
@@ -29,10 +35,23 @@ h3 {
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
     0px -1px 0px rgba(0, 0, 0, 0.5);
 }
+
+h4 {
+  margin: 0;
+  padding: 0;
+  background: url(https://64.media.tumblr.com/c787d11cccb09011d9015377525012d6/tumblr_noc8brfM6Z1qzcapfo1_500.jpg)
+    top center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: bold 60px Arial;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.5);
+}
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 /* Main Page header */
-.container {
+.container-header {
   background: url(https://64.media.tumblr.com/1061954fcd7cb725dae4b956662e45f2/tumblr_inline_mqgbzfONSi1qz4rgp.gif);
   height: 500px;
   display: flex;
@@ -40,7 +59,7 @@ h3 {
   align-items: center;
   max-width: 100%;
 }
-.container p {
+.container-header p {
   font-size: 3rem;
   padding: 0.5rem;
   font-weight: bold;
@@ -48,18 +67,18 @@ h3 {
   text-align: center;
   overflow: hidden;
 }
-.container p span.typed-text {
+.container-header p span.typed-text {
   font-weight: normal;
   color: var(--second-color);
 }
-.container p span.cursor {
+.container-header p span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
 }
-.container p span.cursor.typing {
+.container-header p span.cursor.typing {
   animation: none;
 }
 @keyframes blink {
@@ -135,4 +154,7 @@ h3 {
   }
 }
 
+#main-name {
+  margin-left: -50px;
+}
 /* Navigation Styles */
