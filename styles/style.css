@@ -3,8 +3,11 @@
   --main-color: #d5bdaf;
   --second-color: #e3d5ca;
   --third-color: #f5ebe0;
+  --fourth-color: #52796f;
+  --fifth-color: #6a994e;
+  --sixth-color: #b36a5e;
   --text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
-    0px -1px 0px rgba(0, 0, 0, 0.7);
+    0px -1px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive */
@@ -32,21 +35,21 @@ h3 {
   -webkit-text-fill-color: transparent;
   font: bold 100px Arial;
   text-align: center;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
-    0px -1px 0px rgba(0, 0, 0, 0.5);
+  text-shadow: var(--text-shadow);
 }
 
-h4 {
-  margin: 0;
-  padding: 0;
-  background: url(https://64.media.tumblr.com/c787d11cccb09011d9015377525012d6/tumblr_noc8brfM6Z1qzcapfo1_500.jpg)
-    top center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font: bold 60px Arial;
-  text-align: center;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
-    0px -1px 0px rgba(0, 0, 0, 0.5);
+#p-about {
+  color: var(--fifth-color);
+  display: flex;
+  justify-content: center;
+}
+
+#p-skills {
+  font-size: 30px;
+}
+
+#p-skills small {
+  font-size: 12px;
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
@@ -69,11 +72,11 @@ h4 {
 }
 .container-header p span.typed-text {
   font-weight: normal;
-  color: var(--second-color);
+  color: var(--fifth-color);
 }
 .container-header p span.cursor {
   display: inline-block;
-  background-color: #ccc;
+
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
@@ -128,19 +131,18 @@ h4 {
   top: 60px;
   transform: translateY(-50%);
   font-size: 38px;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+  padding: 10px;
 }
 
 .typewriter span {
   text-transform: uppercase;
-  padding: 10px;
-  border-right: solid var(--text-color) 10px;
+  border-right: solid var(--second-color) 3px;
   background: url(https://64.media.tumblr.com/b46afd96066989e98e56514696e1dba5/tumblr_n596kfjdZp1tatxj0o1_500.jpg)
     top center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
-    0px -1px 0px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 576px) {
@@ -154,7 +156,18 @@ h4 {
   }
 }
 
+/* About Me Page other elements */
 #main-name {
   margin-left: -50px;
+  margin: 0;
+  padding: 0;
+  background: url(https://64.media.tumblr.com/c787d11cccb09011d9015377525012d6/tumblr_noc8brfM6Z1qzcapfo1_500.jpg)
+    top center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: bold 60px Arial;
+  text-align: center;
+  text-shadow: var(--text-shadow);
 }
+
 /* Navigation Styles */
