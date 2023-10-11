@@ -1,3 +1,4 @@
+/* roots */
 :root {
   --main-color: #d5bdaf;
   --second-color: #e3d5ca;
@@ -6,29 +7,38 @@
     0px -1px 0px rgba(0, 0, 0, 0.7);
 }
 
+/* Responsive */
+
+/* Body for all pages */
 body {
   cursor: url(http://i.imgur.com/ZOrzC.png), auto;
   font-family: "Montserrat", sans-serif;
-  background-color: #000;
+  background-color: var(--third-color);
   color: #eee;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-
-* {
+h3 {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background: url(https://64.media.tumblr.com/c787d11cccb09011d9015377525012d6/tumblr_noc8brfM6Z1qzcapfo1_500.jpg)
+    top center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: bold 100px Arial;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.5);
 }
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
+/* Main Page header */
 .container {
   background: url(https://64.media.tumblr.com/1061954fcd7cb725dae4b956662e45f2/tumblr_inline_mqgbzfONSi1qz4rgp.gif);
-  height: 30vh;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 0;
-  margin-right: 0;
+  max-width: 100%;
 }
 .container p {
   font-size: 3rem;
@@ -70,9 +80,59 @@ body {
   }
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
   height: 400px;
   background: var(--third-color);
   color: #000;
 }
+
+/* About me Page Header */
+.container-about {
+  min-width: 500px;
+  height: 400px;
+  align-items: center;
+  box-sizing: border-box;
+  background: var(--main-color);
+  padding: 50px;
+  text-align: center;
+}
+
+.typewriter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 56px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  margin: 0;
+  top: 60px;
+  transform: translateY(-50%);
+  font-size: 38px;
+}
+
+.typewriter span {
+  text-transform: uppercase;
+  padding: 10px;
+  border-right: solid var(--text-color) 10px;
+  background: url(https://64.media.tumblr.com/b46afd96066989e98e56514696e1dba5/tumblr_n596kfjdZp1tatxj0o1_500.jpg)
+    top center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 576px) {
+  .typewriter {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .typewriter {
+    font-size: 36px;
+  }
+}
+
+/* Navigation Styles */
