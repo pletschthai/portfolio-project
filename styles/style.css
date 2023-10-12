@@ -52,6 +52,7 @@ h3 {
   color: var(--fifth-color);
   display: flex;
   justify-content: center;
+  font-size: px;
 }
 
 #p-skills {
@@ -94,7 +95,7 @@ h3 {
 /* Main Page header */
 .container-header {
   background: url(https://64.media.tumblr.com/1061954fcd7cb725dae4b956662e45f2/tumblr_inline_mqgbzfONSi1qz4rgp.gif);
-  height: 500px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,14 +162,13 @@ h3 {
 
 .typewriter {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 56px;
+  font-size: 26px;
   color: #fff;
   font-weight: bold;
   position: relative;
   margin: 0;
   top: 60px;
   transform: translateY(-50%);
-  font-size: 38px;
   text-align: center;
   text-shadow: var(--text-shadow);
   padding: 10px;
@@ -195,8 +195,8 @@ h3 {
 }
 
 /* About Me Page other elements */
-#main-name {
-  margin-left: -50px;
+#main-title {
+  margin-left: -800px;
   margin: 0;
   padding: 0;
   background: url(https://64.media.tumblr.com/c787d11cccb09011d9015377525012d6/tumblr_noc8brfM6Z1qzcapfo1_500.jpg)
@@ -208,4 +208,8 @@ h3 {
   text-shadow: var(--text-shadow);
 }
 
+li {
+  list-style: none;
+  text-align: left;
+}
 /* Navigation Styles */
