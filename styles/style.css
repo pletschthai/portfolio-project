@@ -99,6 +99,13 @@ h3 {
     background-color: #ccc;
   }
 }
+/* Hero Section */
+.hero {
+  text-align: center;
+  height: 400px;
+  background: var(--third-color);
+  color: #000;
+}
 /* Main Page links */
 .navigation-links {
   display: flex;
@@ -135,13 +142,6 @@ h3 {
   background: var(--main-color);
   padding: 50px;
   text-align: center;
-}
-/* Hero Section */
-.hero {
-  text-align: center;
-  height: 400px;
-  background: var(--third-color);
-  color: #000;
 }
 
 .p-about {
