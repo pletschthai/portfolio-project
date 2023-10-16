@@ -3,7 +3,7 @@
   --second-color: #e3d5ca;
   --third-color: #f5ebe0;
   --fourth-color: #52796f;
-  --fifth-color: #6a994e;
+  --fifth-color: #618640;
   --sixth-color: #b36a5e;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
@@ -12,6 +12,14 @@
 }
 @media (max-width: 768px) {
   h1 {
+    font-size: 10px;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  header p {
     font-size: 10px;
   }
 }
@@ -44,6 +52,19 @@ h2 {
   text-shadow: var(--text-shadow);
 }
 
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.custom-navbar a {
+  color: var(--fifth-color);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.custom-navbar nav-link active {
+  color: white;
+}
 #title {
   background: url(https://64.media.tumblr.com/1061954fcd7cb725dae4b956662e45f2/tumblr_inline_mqgbzfONSi1qz4rgp.gif)
     top center;
@@ -189,14 +210,15 @@ li {
 
 .card--1 .card__img,
 .card--1 .card__img--hover {
-  background-image: url("/portfolio-project/images/me.png");
+  background-image: url("/portfolio-project/images/weather-1.png");
+  object-fit: scale-down;
   transform: scale(1.1, 1.1);
   box-shadow: var(--card-shadow);
 }
 
 .card--2 .card__img,
 .card--2 .card__img--hover {
-  background: white;
+  background: url("/portfolio-project/images/world-clock.png");
   transform: scale(1.1, 1.1);
   box-shadow: var(--card-shadow);
 }
@@ -275,4 +297,9 @@ li {
 
 .card:hover .card__info-hover {
   opacity: 1;
+}
+
+#email {
+  text-decoration: none;
+  color: var(--sixth-color);
 }

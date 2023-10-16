@@ -90,3 +90,19 @@ function deleting(textIndex, text) {
     }
   }, sPerChar * 1000);
 }
+
+// Greetings paragraph element //
+function greetings(time) {
+  let hour = new Date().getHours();
+  let greeting = document.getElementById("greetings");
+
+  if (hour >= 0 && hour < 12) {
+    greeting.innerHTML = "Good Morning!";
+  } else if (hour >= 12 && hour < 18) {
+    greeting.innerHTML = "Good Afternoon!";
+  } else {
+    greeting.innerHTML = "Good Evening!";
+  }
+}
+
+greetings();
