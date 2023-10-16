@@ -210,7 +210,7 @@ li {
 
 .card--1 .card__img,
 .card--1 .card__img--hover {
-  background-image: url("/portfolio-project/images/weather-1.png");
+  background-image: url("images/weather-1.png");
   object-fit: scale-down;
   transform: scale(1.1, 1.1);
   box-shadow: var(--card-shadow);
@@ -218,7 +218,7 @@ li {
 
 .card--2 .card__img,
 .card--2 .card__img--hover {
-  background: url("/portfolio-project/images/world-clock.png");
+  background: url("images/world-clock.png");
   transform: scale(1.1, 1.1);
   box-shadow: var(--card-shadow);
 }
