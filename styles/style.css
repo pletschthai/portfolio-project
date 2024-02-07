@@ -210,7 +210,7 @@ li {
 
 .card--1 .card__img,
 .card--1 .card__img--hover {
-  background-image: url("https://media.tenor.com/GtDkRSPU9CgAAAAC/cloud-weather.gif");
+  background-image: url("https://i.pinimg.com/564x/ac/17/99/ac1799ee8a0162eba2e5208c850455f8.jpg");
   object-fit: scale-down;
   transform: scale(1.1, 1.1);
   box-shadow: var(--card-shadow);
@@ -218,7 +218,22 @@ li {
 
 .card--2 .card__img,
 .card--2 .card__img--hover {
-  background-image: url("https://i.pinimg.com/originals/3f/82/40/3f8240fa1d16d0de6d4e7510b43b37ba.gif");
+  background-image: url("https://i.pinimg.com/564x/8c/9e/27/8c9e27a234f0f279febe6bbde17b4d17.jpg");
+  object-fit: scale-down;
+  transform: scale(1.1, 1.1);
+  box-shadow: var(--card-shadow);
+}
+.card--3 .card__img,
+.card--3 .card__img--hover {
+  background-image: url("https://i.pinimg.com/564x/6a/2d/92/6a2d926d826badb2f26c678bfd9f4b2b.jpg");
+  object-fit: scale-down;
+  transform: scale(1.1, 1.1);
+  box-shadow: var(--card-shadow);
+}
+
+.card--4 .card__img,
+.card--4 .card__img--hover {
+  background-image: url("https://i.pinimg.com/564x/45/0e/49/450e494a05c7b1176e832f13ff626efd.jpg");
   object-fit: scale-down;
   transform: scale(1.1, 1.1);
   box-shadow: var(--card-shadow);
